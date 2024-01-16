@@ -1,0 +1,266 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  padding: 0;
+  font-size: 1.125rem;
+}
+
+/* typogrpahy */
+h6,h3{
+  font-weight: 600;
+}
+p{
+  font-weight: 400;
+  margin: 0;
+}
+.widgets a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: white;
+}
+.widgets ul{
+  padding: 0;
+}
+.widgets ul li{
+  list-style-type: none;
+  margin-bottom: 1em;
+ 
+}
+.widgets .col-w2 ul img{
+  width: 1em;
+  margin: 0.2em;
+  margin-bottom: 0;
+  margin-right: 1em;
+}
+.widgets .col-w2 ul li{
+   display: flex;
+}
+.col-title{
+  word-spacing: 0.2em;
+  margin-top: 0;
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 2em;
+  color: white;
+}
+
+.subscript h6,.subscript p{
+  margin: 0;
+  font-size: 0.8rem;
+  color: white;
+}
+.col-w1>p{
+  margin:  1.2em;
+  color: white;
+}
+.secondary >p{
+  text-align: center;
+  color: white;
+
+}
+
+
+/* layouts */
+footer{
+  padding-top: 0.955em;
+  font-size: 1rem;
+  background-image: url("images/college-background\ 1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: center;
+  background-size: cover;
+
+}
+.main{
+  padding: 0.7em;
+  background-image: url(images/Rectangle\ 8.png);
+  background-repeat: no-repeat;
+  background-attachment: center;
+  background-position: center;
+  background-size: cover;
+}
+.secondary{
+  padding: 0.5em;
+  background-color: black;
+}
+.widgets{
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 2.9em;
+  margin-bottom: 0em;
+  display: flex;
+}
+.col{
+  padding: 1em;
+  margin-bottom: 1.5em;
+}
+.col-border{
+  border-right: 1px solid #ffffff;
+}
+.col-w1{
+  width: 30%;
+  
+}
+.col-w2{
+  width: 30%;
+  padding-top: 0.875em;
+  
+}
+.col-w3{
+  width: 20%;
+  padding-top: 0.875em;
+}
+.col-w3 ul li{
+  display: flex;
+  flex-direction: row;
+}
+.icon-list::before{
+    content: ">>";
+    padding-right: 0.6em;
+    color: white;
+}
+.social-logo{
+  display: flex;
+  justify-content: center;
+  padding-right: 0.8em;
+  margin-bottom: 1em;
+}
+.social-logo img{
+  padding-left: 0.5em;
+}
+.clg-logo{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 1em;
+}
+.logo-img{
+    min-width: 100px;
+    max-width: 150px;
+    width: 35%;
+    padding: 1em;
+    margin-left: 0.8em;
+}
+.subscript{
+  padding-left: 1.5em;
+  width: 45%;
+  border-left: 1px solid #ffffff;
+  margin-right: 1em;
+}
+
+
+@media screen and (max-width:1080px) {
+  .widgets{
+    flex-wrap:wrap;
+    width: 90%;
+    justify-content: center;
+  }
+  .col-title{
+    text-align: center;
+  }
+ 
+  .col-w1{
+    width: 30%;
+    
+  }
+  .col-w2{
+    width: 30%;
+    
+  }
+  .col-w3{
+    width: 20%;
+  }
+}
+
+@media screen and (max-width:840px) {
+  .widgets{
+    flex-wrap:wrap;
+    width: 100%;
+    justify-content: start;
+  }
+  .col{
+    padding: 0.5em;
+  }
+  .col-title{
+    text-align: start;
+  }
+ 
+  .col-w1{
+    width: 30%;
+    padding-left: 0;
+  }
+  .col-w2{
+    width: 32%;
+    
+  }
+  .col-w3{
+    width: 18%;
+  }
+}
+
+@media screen and (max-width:750px) {
+  .widgets{
+    flex-wrap:wrap;
+    width:100%;
+    justify-content: center;
+  }
+  .col{
+    padding: 0.5em;
+  }
+  .col-title{
+    text-align: start;
+  }
+ 
+  .col-w1{
+    width: 50%;
+    
+  }
+  .col-w2{
+    width: 50%; 
+    border-right: none;
+  }
+  .col-w3{
+    width: 50%;
+  }
+}
+@media screen and (max-width:500px) {
+  .widgets{
+    flex-wrap:wrap;
+    width: 100%;
+    justify-content: center;
+  }
+  .col-border{
+    border-bottom: 1px solid #ffffff;
+  }
+  .col{
+    padding: 0.5em;
+    border-right: none;
+  }
+  .col-title{
+    text-align: start;
+  }
+  .clg-logo{
+    justify-content: center;
+    margin-top: 2em;
+    padding-left: 0.5em;
+  }
+ .logo-img, .col>p{
+    padding-left: 0;
+    margin-left: 0.5em;
+  }
+  .col-w1{
+    width:80%;
+    padding-left: 0;
+    
+  }
+
+  .col-w2{
+    width: 80%;
+    
+  }
+  .col-w3{
+    width: 80%;
+  }
+}
